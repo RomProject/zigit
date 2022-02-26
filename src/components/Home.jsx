@@ -89,7 +89,7 @@ export default function Home() {
         <td>
           {details.map((s) => (
             <tr>
-              <td style={{ backgroundColor: s.score < 70 ? "red" : "green" }}>
+              <td style={{ backgroundColor: s.score < 70 ? "red" :  s.score>90? 'green':'azure'  }}>
                 {s.score}
               </td>
             </tr>
